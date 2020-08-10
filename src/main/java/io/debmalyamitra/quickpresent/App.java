@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 import io.debmalyamitra.quickpresent.util.*;
+import io.debmalyamitra.quickpresent.core.*;
 
 public class App implements ActionListener
 {
@@ -22,6 +23,8 @@ public class App implements ActionListener
     }
     public void actionPerformed(ActionEvent e)
     {
-      Debug.console("You clicked the button");
+      Debug.console("Making a presentation");
+      Presentation ppt = new Presentation();
+      ppt.SaveToFile();
     }
 }
